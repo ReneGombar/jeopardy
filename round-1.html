@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./assets/mystyle.css">
+  <title>Jeopardy Round one</title>
+</head>
+
+<body>
+  <article> 
+    <header><h1>First Round</h1></header>
+    <main>
+        <div style="display: none;" id="currentPlayerTracker">1</div>
+        <div style="display: none;" id="correctAnswer">1</div>
+        <div style="display: none;" id="questionValue">1</div>
+        <h2 class="score" id="playerTurn">Player 1 Turn</h2>  
+        <div class="container" >
+            <div class="cat" id="cat0">
+                <h6>Category</h6>
+                <button class="question">$100</button>
+                <button class="question">$200</button>
+                <button class="question">$300</button>
+                <button class="question">$400</button>
+                <button class="question">$500</button>
+            </div>
+
+            <div class="cat" id="cat1">
+                <h6>Category two</h6>
+                <button class="question">$100</button>
+                <button class="question">$200</button>
+                <button class="question">$300</button>
+                <button class="question">$400</button>
+                <button class="question">$500</button>
+            </div>
+
+            <div class="cat" id="cat2">
+                <h6>Category</h6>
+                <button class="question">$100</button>
+                <button class="question">$200</button>
+                <button class="question">$300</button>
+                <button class="question">$400</button>
+                <button class="question">$500</button>
+            </div>
+
+            <div class="cat" id="cat3">
+                <h6>Category</h6>
+                <button class="question">$100</button>
+                <button class="question">$200</button>
+                <button class="question">$300</button>
+                <button class="question">$400</button>
+                <button class="question">$500</button>
+            </div>
+
+            <div class="cat" id="cat4">
+                <h6>Category</h6>
+                <button class="question">$100</button>
+                <button class="question">$200</button>
+                <button class="question">$300</button>
+                <button class="question">$400</button>
+                <button class="question">$500</button>
+            </div>
+
+            <div class="cat" id="cat5">
+                <h6>Category</h6>
+                <button class="question">$100</button>
+                <button class="question">$200</button>
+                <button class="question">$300</button>
+                <button class="question">$400</button>
+                <button class="question">$500</button>
+            </div>
+
+            <div class="hiddenQuestion" id="hidElement" style="display: none;">
+              <h2  id="playerTurnQuestionBox"></h2>
+              <h2  id="questionText"></h2>
+              <!--<div id="timer"></div>-->
+              <div class="inputs">
+                <form action="" method="">
+                  <textarea id="playerAnswer" name="answer" placeholder="enter your answer"></textarea>
+                  <div class="guessPass">
+                    <button type="button" id="answerBtn" class="playButton">Guess</button>
+                    <button type="reset" id="passBtn" class="playButton">Pass</button>
+                  </div>
+                </form>
+              </div> 
+            </div>
+          </div>
+
+          <div class="score">
+            <div id="player1score">Player 1 Score: 0 </div>
+            <div id="player2score">Player 2 Score: 0 </div>
+          </div>
+          
+          <a class="nextRound" href="round-2.html" >Round Two</a>
+          
+    </main>
+
+    <footer>Design by Rene Industries LLC. No rights reserved. Copyleft 2022</footer>
+  </article>
+  <script type="module" src="./scripts/index.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/mystyle.css">
+  <title>Final Round</title>
+</head>
+
+<body>
+  <article> 
+    
+    <header><h1>FINAL ROUND</h1></header>
+    <div style="display: none;" id="currentPlayerTracker">1</div>
+    <main class="alex">
+      <h2 class="score" id="playerTurn" style="display:none;">1</h2> 
+        <div class="score" >
+          <div id="player1score">Player 1 Score: 0 </div>
+          <div id="player2score">Player 2 Score: 0 </div>
+        </div>
+        <div>
+          <div class="finalBlock">
+            <div class="finalQuestion">
+              <div class="finalCategory">FINAL CATEGORY</div>
+              <form action="" id="finalQuestion" class="inputs" action="submit">
+                <input type="text" name="" id="user1Wager" placeholder="user1">
+                <input type="text" name="" id="user2Wager" placeholder="user2">
+                <button class="playButton" id="placeBetsBtn">PLACE BETS</button> 
+              </form>
+            </div>
+            <br>
+          </div>
+        </div>
+        
+        <div  id="LastQuestion" style="display:none;">
+          <form action="submit" class="inputs">
+            <input type="text" id="userFinalAnswer" value="" placeholder="player one">    
+            <button class="playButton" id="finalAnswerBtn">Submit Answer</button>
+          </form>
+        </div>
+        
+        <audio src="./assets/jeopardy50sec.mp3" loop controls "autoplay">
+    </main>
+    <div id="winner" >
+      <h1 id="winnerLabel">The winners is </h1>
+      
+
+    </div>
+    <a class="playButton" href="index.html">Start over</a> 
+    <footer>Design by Rene Industries LLC. No rights reserved. Copyleft 2022</footer>
+  </article>
+  <script type="module" src="./scripts/index.js"></script>
+
+</body>
+</html>
